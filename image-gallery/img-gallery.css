@@ -1,0 +1,19 @@
+/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.grid-container img:nth-child(4n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.grid-container img:nth-child(6n) {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+img {
+  width: 100%;
+  display: block;
+}
